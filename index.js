@@ -94,6 +94,12 @@ $(function (){
       if (playerCollision[4] == 5) {
         playerY += 0.2;
       }
+      if (playerCollision[4] == 6) {
+        playerX += 3*xAcc;
+      }
+      if (playerCollision[4] == 7) {
+        playerY += 10;
+      }
       if (playerCollision[4] == 1) {
         playerY += 0.4;
         playerX -= 0.6*xAcc;
