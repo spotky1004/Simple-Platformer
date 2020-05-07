@@ -10,7 +10,7 @@ $(function (){
   jumpPressed = false;
   playerCollision = [0, 0, 0, 0, 0, 0, 0, 0, 0];
   pointThis = 0;
-  levelNow = 7;
+  levelNow = 0;
 
   $(document).keydown(function(e) {
     if (event.keyCode == '32' && jumpCool < 0) {
