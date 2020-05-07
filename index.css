@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: 'Major Mono Display', monospace;
+  overflow: hidden;
+}
+#warpAll {
+  height: 100vh;
+  width: 100vw;
+  background-color: #238c3f;
+  z-index: 50;
+}
+#gameScreen {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  background-color: #57c9cf;
+  z-index: 99;
+
+  transition: transform 0.2s;
+}
+.blockLine {
+  width: 100vw;
+  height: 5vw;
+}
+.thingsBlock {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+}
+#stageDisplay {
+  position: absolute;
+  font-size: 10vh;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 5px 5px 0 rgba(128, 128, 128, 0.7);;
+  z-index: 101;
+}
+#player {
+  position: absolute;
+  width: 1vw;
+  height: 1vw;
+  transform: matrix(5, 0, 0, 5, 0, 0);
+  background-color: #2e72bf;
+  z-index: 100;
+
+  transition: transform 0.2s;
+}
+.b1 {
+  background-color: #238c3f;
+}
+.b2 {
+  background-color: #fff;
+}
+.b3 {
+  background-color: #c74444;
+}
+.b4 {
+  background-color: #d06ee6;
+}
+.b5 {
+  background-color: #6e6ee6;
+}
