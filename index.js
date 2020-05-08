@@ -13,34 +13,26 @@ $(function (){
   levelNow = 0;
 
   $(document).keydown(function(e) {
-    if (event.keyCode == '32' && jumpCool < 0) {
+    if ((event.keyCode == '32' || event.keyCode == '87') && jumpCool < 0) {
       jumpPressed = true;
     }
-    else if (event.keyCode == '38' && jumpCool < 0) {
-      jumpPressed = true;
-    }
-    else if (event.keyCode == '37'){
+    else if (event.keyCode == '37' || event.keyCode == '65'){
       xAcc = -1;
     }
-    else if (event.keyCode == '39'){
+    else if (event.keyCode == '39' || event.keyCode == '68'){
       xAcc = 1;
     }
   });
   $(document).keyup(function(e) {
-    if (event.keyCode == '32'){
+    if (event.keyCode == '32' || event.keyCode == '87'){
       jumpPressed = false;
       jumpDown = true;
       jumpCool = 0.85;
     }
-    else if (event.keyCode == '38'){
-      jumpPressed = false;
-      jumpDown = true;
-      jumpCool = 0.85;
-    }
-    else if (event.keyCode == '37'){
+    else if (event.keyCode == '37' || event.keyCode == '65'){
       xAcc = 0;
     }
-    else if (event.keyCode == '39'){
+    else if (event.keyCode == '39' || event.keyCode == '68'){
       xAcc = 0;
     }
   });
