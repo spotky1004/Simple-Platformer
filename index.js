@@ -16,6 +16,9 @@ $(function (){
     if (event.keyCode == '32' && jumpCool < 0) {
       jumpPressed = true;
     }
+    else if (event.keyCode == '38' && jumpCool < 0) {
+      jumpPressed = true;
+    }
     else if (event.keyCode == '37'){
       xAcc = -1;
     }
@@ -25,6 +28,11 @@ $(function (){
   });
   $(document).keyup(function(e) {
     if (event.keyCode == '32'){
+      jumpPressed = false;
+      jumpDown = true;
+      jumpCool = 0.85;
+    }
+    else if (event.keyCode == '38'){
       jumpPressed = false;
       jumpDown = true;
       jumpCool = 0.85;
